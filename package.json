@@ -1,7 +1,7 @@
 {
   "name": "params-check",
-  "version": "0.0.1",
-  "description": "param-check",
+  "version": "0.0.2",
+  "description": "reusable code to validate function params.",
   "main": "index.js",
   "scripts": {
     "build": "babel --presets env src -d ./ --ignore src/index.test.js",
@@ -10,17 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/niradler/param-check"
+    "url": "git+https://github.com/niradler/params-check"
   },
   "keywords": [
-    "npm",
-    "package",
-    "template"
+    "function",
+    "params",
+    "param",
+    "validation"
   ],
   "author": "Nir Adler",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/niradler/param-check/issues"
+    "url": "https://github.com/niradler/params-check/issues"
   },
   "homepage": "http://niradler.com",
   "dependencies": {},
