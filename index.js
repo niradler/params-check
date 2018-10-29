@@ -33,9 +33,9 @@ var ParamCheck = function () {
     key: "funcContainer",
     value: function funcContainer(fn, cb) {
       try {
-        fn();
+        return fn();
       } catch (error) {
-        cb(error);
+        return cb(error);
       }
     }
   }]);
