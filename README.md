@@ -1,7 +1,7 @@
-#### Param Check
+#### Params Check
 
 ```javascript
-//npm i -S param-check --production
+//npm i -S params-check --production
 const ParamsCheck = ('params-check')
 //optional container to catch the error throw;
 const funcContainer = ParamsCheck.funcContainer;

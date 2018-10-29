@@ -1,15 +1,23 @@
-//npm i -S param-check --production
+//npm i -S params-check --production
 import ParamsCheck from 'params-check';
 //optional container to catch the error throw;
 const funcContainer = ParamsCheck.funcContainer;
 // test adapter to check number of params send to function
-const adapter = (params, schema) => params.length == schema.numberOfParams ? ({error:null}) :  ({error:'missing params!'}); 
+const adapter = (params, schema) => {
+  if(params.length == schema.numberOfParams) {
+    return {error:null}
+  } 
+  return {error:'missing params!'}
+}; 
 // create instance with adapter for validation
 const paramsCheck = new ParamsCheck(adapter); 
 // test function
 const testFunc = (a, b, c) => a + b + c; 
+const validationRules = {
+  numberOfParams:3
+}
 // composition 
-const testedFunc = paramsCheck.withValidation(testFunc.name, {numberOfParams:3}, testFunc); 
+const testedFunc = paramsCheck.withValidation(testFunc.name, validationRules, testFunc); 
 
 test('to throw', () => { 
   let isThrow = false;
