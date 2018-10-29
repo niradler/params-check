@@ -1,4 +1,4 @@
-#### Params Check
+### Params Check
 
 ```javascript
 //npm i -S params-check --production
@@ -33,3 +33,7 @@ test('to pass', () => {
   expect(testedFunc(1, 2, 3)).toBe(6);
 });
 ```
+
+## Demo
+
+[runkit](https://runkit.com/niradler/5bd797402b601900123e01c4)
