@@ -1,6 +1,6 @@
 {
   "name": "params-check",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "reusable code to validate function params.",
   "main": "index.js",
   "scripts": {
