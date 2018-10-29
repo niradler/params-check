@@ -2,7 +2,7 @@
 
 ```javascript
 //npm i -S params-check --production
-const ParamsCheck = ('params-check')
+const ParamsCheck = require('params-check')
 //optional container to catch the error throw;
 const funcContainer = ParamsCheck.funcContainer;
 // test adapter to check number of params send to function

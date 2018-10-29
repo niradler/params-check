@@ -4,9 +4,9 @@ class ParamCheck {
   }
   static funcContainer(fn, cb) {
     try {
-      fn()
+      return fn();
     } catch (error) {
-      cb(error)
+     return  cb(error);
     }
   }
   withValidation(name, schema, callback){
